@@ -176,6 +176,7 @@
 
 		// Array.toString()
 		// - 지정된 배열 및 그 요소를 나타내는 문자열을 반환하는 메서드
+
 		var tasty = [ 100, 'choco', 'vanilla'];
 		var tastyStr = tasty.toString();
 		console.log(tastyStr); // 100,choco,vanilla
@@ -184,13 +185,23 @@
 		// Array.indexOf(searchElement, fromIndex)
 		// - 배열 안에서 찾으려는 값과 정확하게 일치(===)하는 첫번째 요소의 인덱스 값을 반환하는 메서드
 		// - 찾으려는 값이 배열에 없으면 -1을 반환
+
 		var  chocoBar = [ 'first', 'second', 'third', 'third', 'second', 'first'];
 		var vanillaBar = chocoBar.indexOf('second', 2);
 		console.log(vanillaBar); // 4
 
 
-		// String.replace()
-		// - 
+		// String.replace(기존문자, 바꿀문자)
+		// - 어떤 패턴에 일치하는 일부 또는 모든 부분이 교체된 새로운 문자열을 반환하는 메서드
+
+        var exStr = '무궁화 삼천리 화려강산 대한사람 대한으로 길이 보전하세';
+        newStr = exStr.replace('대한', '민국');
+        console.log(newStr); // 무궁화 삼천리 화려강산 민국사람 대한으로 길이 보전하세
+
+        newStr2 = exStr.replaceAll('대한', '민국');
+        console.log(newStr2); // 무궁화 삼천리 화려강산 민국사람 민국으로 길이 보전하세
+
+        // String.slice()
 
 	</script>
 </body>
